@@ -1,0 +1,16 @@
+import pandas as pd
+
+data = pd.read_csv('./player_data.csv')
+df = data.sample(frac=1)
+df.insert(0, "Pick", range(1, 13), True)
+draft_order = df.to_string(index=False)
+print('\n')
+print('\n')
+print('\n')
+print('\n')
+print('2020 BUSH BEARS DRAFT ORDER \n')
+print(draft_order)
+print('\n')
+print('\n')
+print('\n')
+print('\n')
